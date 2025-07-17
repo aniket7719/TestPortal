@@ -71,7 +71,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8080/api/admin/tests-questions/${selectedTestId}/questions`,
+        `https://testportal-server.onrender.com/api/admin/tests-questions/${selectedTestId}/questions`,
         {
           questionText,
           options,

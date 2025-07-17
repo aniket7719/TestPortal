@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", form);
+      const res = await axios.post("https://testportal-server.onrender.com/api/auth/login", form);
       alert("Login successful");
 
       const { token, role } = res.data;

@@ -43,7 +43,7 @@ const AddQuestionsPage = () => {
 
     try {
       await axios.post(
-        `http://localhost:8080/api/admin/tests/${testId}/questions`,
+        `https://testportal-server.onrender.com/api/admin/tests/${testId}/questions`,
         questionData,
         {
           headers: {

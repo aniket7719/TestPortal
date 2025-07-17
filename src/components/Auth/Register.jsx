@@ -25,7 +25,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/auth/register",
+        "https://testportal-server.onrender.com/api/auth/register",
         form
       );
       alert("Registration successful!");

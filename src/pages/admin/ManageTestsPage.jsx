@@ -26,7 +26,7 @@ const ManageTestsPage = () => {
   }
 
   try {
-    const res = await axios.get("http://localhost:8080/api/admin/tests", {
+    const res = await axios.get("https://testportal-server.onrender.com/api/admin/tests", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -61,7 +61,7 @@ const ManageTestsPage = () => {
     if (!window.confirm("Are you sure you want to delete this test?")) return;
 
     try {
-      await axios.delete(`http://localhost:8080/api/admin/tests/${id}`, {
+      await axios.delete(`https://testportal-server.onrender.com/api/admin/tests/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

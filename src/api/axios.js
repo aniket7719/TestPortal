@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api", // ✅ Your backend base path
+  baseURL: "https://testportal-server.onrender.com/api", // ✅ Your backend base path
 });
 
 // ✅ Automatically attach token to every request

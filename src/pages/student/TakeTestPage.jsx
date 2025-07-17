@@ -74,7 +74,7 @@ const TakeTestPage = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8080/api/student/tests/${testId}/submit`,
+        `https://testportal-server.onrender.com/api/student/tests/${testId}/submit`,
         payload,
         {
           headers: { Authorization: `Bearer ${token}` },
